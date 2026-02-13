@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Analysis Pro - Local Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Domain Analysis Pro</h1>
+        
+        <!-- زر تحميل الصورة -->
+        <input type="file" id="upload" accept="image/*" onchange="handleImageUpload()">
+        
+        <!-- ملخص الإحصائيات -->
+        <div class="summary" id="summary">
+            <div class="stat">🟢 BUY: 0</div>
+            <div class="stat">🟡 WATCH: 0</div>
+            <div class="stat">🔴 KILL: 0</div>
+        </div>
+        
+        <!-- عرض النتائج (بطاقات الدومينات) -->
+        <div class="results" id="results"></div>
+    </div>
+
+    <!-- Tesseract.js (OCR) -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.1.5/dist/tesseract.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
