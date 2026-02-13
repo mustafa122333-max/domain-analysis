@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+    color: #333;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.domain-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background: #f8f9fa;
+}
+
+.card-header h2 {
+    margin: 0 0 0 10px;
+}
+
+.card-details {
+    padding: 15px;
+    display: none; /* يتم عرضها عند التوسيع */
+}
+
+/* تصنيف بالألوان حسب القرار */
+.buy .card-header { background-color: #d4edda; color: #155724; }
+.watch .card-header { background-color: #fff3cd; color: #856404; }
+.kill .card-header { background-color: #f8d7da; color: #721c24; }
